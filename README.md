@@ -2,7 +2,7 @@
 
 # *FeatSet+*: Visual features from open Image Datasets
 
-*Last Update: November 8, 2021.*
+*Last Update: November 11, 2021.*
 
 ***FeatSet+*** is a dataset with visual features (color, texture, and shape) extracted from 17 open image datasets from the Literature. *FeatSet+* supports different analyses involving machine learning, image analysis, and content-based image retrieval (CBIR). Moreover, the dataset can serve researchers seeking to solve problems related to the study of image features from different applications, such as emergency scenarios, medical cases, and object classification or recognition.
 
@@ -10,7 +10,7 @@
 
 The *FeatSet+* database schema is the following:  
 
-![FeatSet database schema](https://github.com/mtcazzolato/featset-temporary/blob/main/schema_new.png)  
+![FeatSet database schema](https://github.com/mtcazzolato/featset-temporary/blob/main/schema.png)  
   
 Each dataset in *FeatSet+* follows the same schema, with (a) a metadata table containing the object identifier (OID), the filename (which is the same as the public dataset), and the set of classes (if any). The (b) set of FEM tables has the OID as a foreign key (FK), and every dimension of the feature vector is stored as a column. Additionally, (c) the Feature Equivalence Table provides the Feature Extraction  Method (FEM) name, the feature ID and the corresponding description of every visual feature provided by the FEM.  
   
@@ -46,6 +46,8 @@ CSV-File-Link: Click [here](https://drive.google.com/file/d/1_jXUkrMuRQLp0gBLule
 # *FeatSet+* Datasets
 
 Following, we provide the description of the image datasets composing FeatSet+:  
+
+Index:  
 
 [Dataset ds-BoWFire](#dataset-ds-bowfire)  
 [Dataset ds-Flickr-Fire](#dataset-ds-flickr-fire)  
